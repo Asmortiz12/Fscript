@@ -1,0 +1,15 @@
+{
+    "code": 1,
+    "message": "Uncaught Error: Class &quot;FacturaScripts\\Core\\Template\\Controller\\ApiController&quot; not found in \/Plugins\/ApiPrueba\/Controller\/ApiListadoProductos.php:9\n\nStack trace:\n#0 \/vendor\/composer\/ClassLoader.php(571): include()\n#1 \/vendor\/composer\/ClassLoader.php(428): Composer\\Autoload\\includeFile(&#39;\/v...&#39;)\n#2 \/Dinamic\/Controller\/ApiListadoProductos.php(7): Composer\\Autoload\\ClassLoader-&gt;loadClass(&#39;FacturaScripts\\\\...&#39;)\n#3 \/vendor\/composer\/ClassLoader.php(571): include(&#39;\/D...&#39;)\n#4 \/vendor\/composer\/ClassLoader.php(428): Composer\\Autoload\\includeFile(&#39;\/v...&#39;)\n#5 \/Core\/Kernel.php(370): Composer\\Autoload\\ClassLoader-&gt;loadClass(&#39;FacturaScripts\\\\...&#39;)\n#6 \/Core\/Kernel.php(190): FacturaScripts\\Core\\Kernel::runController(&#39;\/api\/3\/listado-...&#39;)\n#7 \/index.php(63): FacturaScripts\\Core\\Kernel::run(&#39;\/api\/3\/listado-...&#39;)\n#8 {main}\n  thrown",
+    "file": "\/Plugins\/ApiPrueba\/Controller\/ApiListadoProductos.php",
+    "line": 9,
+    "fragment": "use FacturaScripts\\Core\\Template\\Controller\\ApiController;\n4use FacturaScripts\\Core\\Template\\Controller\\ApiController;\n5use FacturaScripts\\Dinamic\\Model\\Producto;\n6use FacturaScripts\\Dinamic\\Model\\ProductoImagen;\n7use FacturaScripts\\Dinamic\\Model\\AttachedFile;\n8\n<spam style=\"padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: red; color: white\">9class ApiListadoProductos extends ApiController<\/spam>\n10{\n11    public function getResources(): array\n12    {\n13        return [\n14            'listaDeProductos' => [",
+    "hash": "f7f3273134d77af577466bfaf0947072",
+    "url": "\/api\/3\/listado-productos",
+    "report_url": "https:\/\/facturascripts.com\/errores\/f7f3273134d77af577466bfaf0947072",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2Ff7f3273134d77af577466bfaf0947072",
+    "core_version": 2024.94,
+    "php_version": "8.1.31",
+    "os": "Linux",
+    "plugin_list": "ApiPrueba"
+}

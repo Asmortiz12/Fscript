@@ -1,0 +1,15 @@
+{
+    "code": 1,
+    "message": "Uncaught mysqli_sql_exception: Unknown database &#39;facturascripts&#39; in \/Core\/Base\/DataBase\/MysqlEngine.php:176\n\nStack trace:\n#0 \/Core\/Base\/DataBase\/MysqlEngine.php(176): mysqli-&gt;__construct(&#39;mysql&#39;, &#39;root&#39;, &#39;mypassword&#39;, &#39;facturascripts&#39;, 3306)\n#1 \/Core\/Base\/DataBase.php(155): FacturaScripts\\Core\\Base\\DataBase\\MysqlEngine-&gt;connect(&#39;&#39;)\n#2 \/Core\/Model\/Base\/ModelCore.php(128): FacturaScripts\\Core\\Base\\DataBase-&gt;connect()\n#3 \/Core\/Tools.php(675): FacturaScripts\\Core\\Model\\Base\\ModelCore-&gt;__construct()\n#4 \/Core\/Cache.php(147): FacturaScripts\\Core\\Tools::FacturaScripts\\Core\\{closure}()\n#5 \/Core\/Tools.php(681): FacturaScripts\\Core\\Cache::remember(&#39;tools-settings&#39;, Object(Closure))\n#6 \/Core\/Tools.php(479): FacturaScripts\\Core\\Tools::settingsLoad()\n#7 \/Core\/Kernel.php(104): FacturaScripts\\Core\\Tools::settings(&#39;default&#39;, &#39;codpais&#39;, &#39;ESP&#39;)\n#8 \/index.php(49): FacturaScripts\\Core\\Kernel::init()\n#9 {main}\n  thrown",
+    "file": "\/Core\/Base\/DataBase\/MysqlEngine.php",
+    "line": 176,
+    "fragment": "        if (false === class_exists('mysqli')) {\n171        if (false === class_exists('mysqli')) {\n172            $error = $this->i18n->trans('php-mysql-not-found');\n173            throw new KernelException('DatabaseError', $error);\n174        }\n175\n<spam style=\"padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: red; color: white\">176        $result = new mysqli(FS_DB_HOST, FS_DB_USER, FS_DB_PASS, FS_DB_NAME, (int)FS_DB_PORT);<\/spam>\n177        if ($result->connect_errno) {\n178            $error = $result->connect_error;\n179            $this->lastErrorMsg = $error;\n180            throw new KernelException('DatabaseError', $error);\n181        }",
+    "hash": "9114a899fd57420797250cf18c6e8154",
+    "url": "\/api\/3",
+    "report_url": "https:\/\/facturascripts.com\/errores\/9114a899fd57420797250cf18c6e8154",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2F9114a899fd57420797250cf18c6e8154",
+    "core_version": 2024.94,
+    "php_version": "8.1.31",
+    "os": "Linux",
+    "plugin_list": "ApiPrueba"
+}

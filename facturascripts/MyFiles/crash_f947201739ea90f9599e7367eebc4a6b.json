@@ -1,0 +1,15 @@
+{
+    "code": 1,
+    "message": "Uncaught Error: Class &quot;FacturaScripts\\Core\\Api\\ApiRoot&quot; not found in \/Plugins\/ApiPrueba\/Init.php:21\n\nStack trace:\n#0 \/Core\/Internal\/Plugin.php(235): FacturaScripts\\Plugins\\ApiPrueba\\Init-&gt;init()\n#1 \/Core\/Plugins.php(244): FacturaScripts\\Core\\Internal\\Plugin-&gt;init()\n#2 \/index.php(59): FacturaScripts\\Core\\Plugins::init()\n#3 {main}\n  thrown",
+    "file": "\/Plugins\/ApiPrueba\/Init.php",
+    "line": 21,
+    "fragment": "{\n16{\n17    public function init(): void\n18    {\n19        \/\/ se ejecuta cada vez que carga FacturaScripts (si este plugin est\u00e1 activado).\n20        Kernel::addRoute('\/api\/3\/listado-productos', 'ApiListadoProductos', -1);\n<spam style=\"padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: red; color: white\">21        ApiRoot::addCustomRoute('listado-productos');<\/spam>\n22    }\n23\n24    public function uninstall(): void\n25        {\n26            \/\/ se ejecuta cada vez que se desinstale el plugin. Primero desinstala y luego ejecuta el uninstall.",
+    "hash": "f947201739ea90f9599e7367eebc4a6b",
+    "url": "\/AdminPlugins",
+    "report_url": "https:\/\/facturascripts.com\/errores\/f947201739ea90f9599e7367eebc4a6b",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2Ff947201739ea90f9599e7367eebc4a6b",
+    "core_version": 2024.94,
+    "php_version": "8.1.31",
+    "os": "Linux",
+    "plugin_list": "ApiPrueba"
+}

@@ -1,0 +1,19 @@
+[
+    {
+        "compatible": true,
+        "description": "ApiPrueba",
+        "enabled": true,
+        "folder": "ApiPrueba",
+        "hidden": false,
+        "installed": true,
+        "min_version": 2024.5,
+        "min_php": 7.3,
+        "name": "ApiPrueba",
+        "order": 1,
+        "post_disable": false,
+        "post_enable": false,
+        "require": [],
+        "require_php": [],
+        "version": 0.1
+    }
+]
